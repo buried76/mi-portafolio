@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portafolio - Alvaro Raymundo Prado Cortez </title>
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+
+  <!-- AOS Animations -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      background: #f4f7fb;
+      color: #333;
+      scroll-behavior: smooth;
+    }
+    header {
+      background: linear-gradient(135deg, #003366, #005599);
+      color: white;
+      text-align: center;
+      padding: 5rem 2rem;
+    }
+    header h1 {
+      font-size: 2.8rem;
+      margin: 0;
+    }
+    header p {
+      font-size: 1.2rem;
+      opacity: 0.9;
+    }
+    section {
+      padding: 4rem 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+    h2 {
+      color: #003366;
+      font-size: 2rem;
+      margin-bottom: 2rem;
+      text-align: center;
+      position: relative;
+    }
+    h2::after {
+      content: "";
+      display: block;
+      width: 60px;
+      height: 4px;
+      background: #005599;
+      margin: 0.5rem auto 0;
+      border-radius: 2px;
+    }
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+      margin-top: 1.5rem;
+    }
+    .card {
+      background: white;
+      border-radius: 12px;
+      padding: 1.5rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+    }
+    .card h3 {
+      margin-top: 0;
+      color: #005599;
+    }
+    .card a {
+      display: inline-block;
+      margin-top: 0.5rem;
+      text-decoration: none;
+      color: white;
+      background: #005599;
+      padding: 0.5rem 1rem;
+      border-radius: 6px;
+      transition: background 0.2s;
+    }
+    .card a:hover {
+      background: #003366;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+    }
+    ul li {
+      background: #e6f0fa;
+      padding: 0.7rem 1.2rem;
+      border-radius: 8px;
+      font-weight: 500;
+      transition: transform 0.2s;
+    }
+    ul li:hover {
+      transform: scale(1.05);
+      background: #d9ebf9;
+    }
+    footer {
+      background: #003366;
+      color: white;
+      text-align: center;
+      padding: 1.5rem;
+      margin-top: 2rem;
+    }
+    footer a {
+      color: #ffd700;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <header data-aos="fade-down">
+    <h1>Alvaro Raymundo Prado Cortez</h1>
+    <p>Ingeniero en Sistemas | Desarrollador Web | Entusiasta del Aprendizaje</p>
+  </header>
+
+  <section id="about" data-aos="fade-up">
+    <h2>Sobre mí</h2>
+    <p style="text-align: center;">Titulado de Ingeniería en Sistemas Computacionales con interés en desarrollo web, bases de datos y análisis de datos. Me apasiona crear proyectos que resuelvan problemas reales.</p>
+  </section>
+
+  <section id="projects">
+    <h2 data-aos="zoom-in">Proyectos</h2>
+    <div class="projects">
+      <div class="card" data-aos="fade-right">
+        <h3>Sistema de Inventario</h3>
+        <p>CRUD web hecho con Node.js y MongoDB.</p>
+        <a href="https://github.com/usuario/proyecto1" target="_blank">Ver en GitHub</a>
+      </div>
+      <div class="card" data-aos="fade-up">
+        <h3>API de Tareas</h3>
+        <p>API REST en Express con endpoints para gestión de tareas.</p>
+        <a href="https://github.com/usuario/proyecto2" target="_blank">Ver en GitHub</a>
+      </div>
+      <div class="card" data-aos="fade-left">
+        <h3>Análisis de Datos</h3>
+        <p>Dashboard en Python con Pandas y Matplotlib.</p>
+        <a href="https://github.com/usuario/proyecto3" target="_blank">Ver en GitHub</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" data-aos="fade-up">
+    <h2>Habilidades</h2>
+    <ul>
+      <li>Python</li>
+      <li>Java</li>
+      <li>C#</li>
+      <li>JavaScript</li>
+      <li>Node.js</li>
+      <li>React</li>
+      <li>MySQL</li>
+      <li>MongoDB</li>
+    </ul>
+  </section>
+
+  <section id="contact" data-aos="fade-up">
+    <h2>Contacto</h2>
+    <p style="text-align: center;"> pradocorteza@gmail.com / 8120152946 | 💼 <a href="https://linkedin.com/in/tuusuario" target="_blank">LinkedIn</a> | 💻 <a href="https://github.com/tuusuario" target="_blank">GitHub</a></p>
+  </section>
+
+  <footer>
+    <p>© 2025 Alvaro Raymunodo Prado Cortez - Portafolio | <a href="#about">Volver arriba</a></p>
+  </footer>
+
+  <!-- Script AOS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1200, // duración de la animación
+      once: true      // solo animar una vez
+    });
+  </script>
+</body>
+</html>
